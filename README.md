@@ -1,5 +1,4 @@
-# Домашнее задание к занятию "`Название занятия`" - `Фамилия и имя студента`
-
+# Домашнее задание к занятию "`Git`" - `Akayev Timur`
 
 ### Инструкция по выполнению домашнего задания
 
@@ -24,94 +23,146 @@
 
 ### Задание 1
 
-`Приведите ответ в свободной форме........`
+```bash
+timur@Netology:~/Git/netology$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+нечего коммитить, нет изменений в рабочем каталоге
+timur@Netology:~/Git/netology$ nano README.md 
+timur@Netology:~/Git/netology$ nano README.md 
+timur@Netology:~/Git/netology$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
 
-```
-Поле для вставки кода...
-....
-....
-....
-....
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>...», чтобы добавить файл в индекс)
+  (используйте «git restore <файл>...», чтобы отменить изменения в рабочем каталоге)
+        изменено:      README.md
+
+индекс пуст (используйте «git add» и/или «git commit -a»)
+timur@Netology:~/Git/netology$ git diff
+diff --git a/README.md b/README.md
+index ece8446..66eaf76 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # netology
+ Git Homework 
++Akayev Timur
+timur@Netology:~/Git/netology$ git diff --staged
+timur@Netology:~/Git/netology$ git add README.md
+timur@Netology:~/Git/netology$ git diff
+timur@Netology:~/Git/netology$ git diff --staged
+diff --git a/README.md b/README.md
+index ece8446..66eaf76 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # netology
+ Git Homework 
++Akayev Timur
+timur@Netology:~/Git/netology$ git commit -m 'First commit'
+[main 180b7f7] First commit
+ 1 file changed, 1 insertion(+)
+timur@Netology:~/Git/netology$ git push origin master
+error: src refspec master ничему не соответствует
+error: не удалось отправить некоторые ссылки в «https://github.com/timurgithub/netology.git»
+timur@Netology:~/Git/netology$ git branch
+* main
+timur@Netology:~/Git/netology$ git push origin main
+Перечисление объектов: 5, готово.
+Подсчет объектов: 100% (5/5), готово.
+Запись объектов: 100% (3/3), 279 байтов | 279.00 КиБ/с, готово.
+Всего 3 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To https://github.com/timurgithub/netology.git
+   a61766f..180b7f7  main -> main
 ```
 
 `При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![Задание_1](https://github.com/timurgithub/netology-git-hw/blob/main/img/1.png)
 
 
 ---
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
+`Создание файла .gitignore`
+```bash
+touch .gitignore```
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
+`Проверка статуса`
+```bash
+git status
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+
+`Добавление файла в индекс`
+```git add .gitignore```
+
+`Добавление правил в .gitignore`
+```bash
+nano .gitignore >> *.pyc, cache/
+```
+
+`Коммит изменений`
+```bash
+git commit -m "Add .gitignore to ignore .pyc files and cache directory"
+```
+
+`Пуш изменений в удаленный репозиторий`
+```bash
+git push origin main
 ```
 
 `При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-
+![Задание_2](https://github.com/timurgithub/netology-git-hw/blob/main/img/2.png)
 
 ---
 
 ### Задание 3
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
+`Создание и переключение на ветку dev`
+```bash
+git checkout -b dev
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
-
-### Задание 4
-
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
+`Создание и добавление файла test.sh`
+```bash
+nano test.sh
+git add test.sh
+git commit -m "Add test.sh"
+git push origin dev
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+`Изменение и добавление файла test.sh`
+```bash
+nano test.sh
+git add test.sh
+git commit -m "Update test.sh"
+git push origin dev
+```
+
+`Переключение на основную ветку`
+```bash
+git checkout main
+```
+
+`Создание и добавление файла main.sh`
+```bash
+echo "#!/bin/bash" > main.sh
+echo "echo 'Main branch script'" >> main.sh
+git add main.sh
+git commit -m "Add main.sh with initial content"
+git push origin main
+```
+
+`Мердж ветки dev в основную`
+```
+git checkout main
+git merge dev
+```
+
+`Пуш в основную ветку`
+```bash
+git push origin main
+```
