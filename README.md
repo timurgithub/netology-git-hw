@@ -82,7 +82,7 @@ To https://github.com/timurgithub/netology.git
 `При необходимости прикрепитe сюда скриншоты
 ![Задание_1](https://github.com/timurgithub/netology-git-hw/blob/main/img/1.png)
 
-
+[Ссылка на коммит](https://github.com/timurgithub/netology/commit/180b7f74e1ebafa937a86a408074fe7f882d34f8)
 ---
 
 ### Задание 2
@@ -117,6 +117,7 @@ git push origin main
 `При необходимости прикрепитe сюда скриншоты
 ![Задание_2](https://github.com/timurgithub/netology-git-hw/blob/main/img/2.png)
 
+[Ссылка на коммит](https://github.com/timurgithub/netology/commit/508baaf9a31750586781269d912527c73ddf8e01)
 ---
 
 ### Задание 3
